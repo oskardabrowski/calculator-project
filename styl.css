@@ -1,0 +1,132 @@
+@font-face {
+    font-family: Prime;
+    src: url(Prime-Regular.ttf);
+}
+
+html {
+    font-size: 300%;
+    width: 100%;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+.kal-body {
+    margin: 0px;
+    background-color: #000000;
+    width: 100%;
+    height: 100vh;
+    /*width: 76.8mm;
+    height: 159.8mm;*/
+}
+
+.board {
+    overflow: hidden;
+    margin: auto;
+    background-color: #000000;
+    width: 100%;
+    height: 37.5%;
+    border-bottom: 0.5mm solid #0097DC;
+}
+.string{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    float: right;
+    word-wrap: break-word;
+    max-height: auto;
+    padding-left: 1px;
+    padding-right: 10px;
+    width: 100%;
+    height: 65%;
+    margin-top: 5%;
+    background-color: none;
+    text-align: right;
+    font-family: Prime;
+    color: white;
+    padding: 8px 0px 0px 0px;
+}
+
+::-webkit-scrollbar {
+    width: 7.5px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #0097DC;
+}
+::-webkit-scrollbar-track {
+    border: 1px solid #0097DC;
+}
+.result {
+    overflow: hidden;
+    padding-top: 5%;
+    width: 100%;
+    height: 25%;
+    text-align: right;
+    font-family: Prime;
+    font-size: 1.2em;
+    color: white;
+}
+.keyboard {
+    overflow: hidden;
+    margin: 2% 2.5% 2.5% 2.5%;
+    width: 95%;
+    height: 59%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+}
+.red {
+    background-color: none;
+}
+.blue {
+    border: 2px solid #0097DC;
+    margin: auto;
+    width: 90%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 120%;
+    font-family: Prime;
+    color: white;
+}
+.blue.bigger {
+    font-size: 170%;
+}
+.blue:hover {
+    background-color: #192F35;
+}
+.blue:active {
+    background-color: #36C3F2;
+}
+.no {
+    margin: 0px;
+    padding: 0px;
+}
+
+@media screen and (min-width: 1200px) {
+    html {
+        font-size: 100%;
+    }
+    .kal-body {
+        width: 76.8mm;
+        height: 159.8mm;
+        margin: 5% auto auto auto;
+    }
+    .keyboard {
+        margin: 5% 2.5% 2.5% 2.5%;
+    }
+    .blue {
+        border: 1px solid #0097DC;
+    }
+    .string{
+        width: 72.8mm;
+    }
+}
